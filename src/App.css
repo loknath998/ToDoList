@@ -1,38 +1,103 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family:'Josefin Sans','Arial Narrow',Arial,sans-serif;
+}
+.main_div{
+  background: #6983aa;
+  width:100%;
+  height: 100vh;
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center_div{
+  background: #f4f4f4;
+  width: 25%;
+  height:80vh;
+  border-radius: 15px;
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,.5);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  color:white;
+  background: transparent;
+  background-color: #8566aa;
+  padding: 6px 0 2px 0;
+  margin-bottom: 10px;
+  box-shadow : 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
 }
+input{
+  text-align: center;
+  height:30px;
+  top:10px;
+  border:none;
+  background:transparent;
+  font-size: 20px;
+  font-weight:500;
+  width: 60%;
+  border-bottom:1px solid #8566aa;
+  outline: none;
+}
+button{
+  min-height:40px;
+  width:40px;
+  border-radius: 50%;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* border-color: transparent; */
+  background-color: #8566aa;
+  color:#fff;
+  font-size: 40px;
+  border:none;
+  outline:none;
+  margin-left:10px;
+  box-shadow:5px 5px 15px -5px rgba(0,0,0,.3);
+  
+}
+button:hover{
+  background-color: #20bf6b;
+}
+.removeButton{
+  width: 20px;
+  min-height: 20px;
+  height: 20px;
+  font-size: 15px;
+  padding-top: 5px;
+  margin-right: 10px;
+}
+.strike_btn{
+  background-color: #213fb0;
+  border-radius: 8px;
+  font-size: 25px;
+  width:20px;
+  min-height: 20px;
+  height: 20px;
+  padding-top: 0px;
+  text-align: center;
+}
+.removeButton:hover{
+  background-color: #f34c40;
+}
+ol{
+  margin-top:30px;
+}
+ol li{
+  text-align: left;
+  padding-left: 0px;
+  font-size: 20px;
+  font-weight:500;
+  min-height:40px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color:#8566aa;
+  text-transform: capitalize;
 }
